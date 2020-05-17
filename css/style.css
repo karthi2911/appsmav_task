@@ -1,0 +1,427 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button:focus {
+  outline: none !important;
+  border-color: inherit !important;
+  box-shadow: none !important;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+
+.modal-header {
+  padding: 0.75rem 1rem;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.hero-image {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image::before {
+  content: "";
+  display: block;
+  padding-bottom: 39%;
+}
+
+.hero-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.hero-text h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* margin-top: -1.8rem; */
+  margin-top: -31px;
+  border-bottom: none;
+}
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+  margin-right: 3px;
+}
+.nav-tabs .nav-item:first-child .nav-link {
+  border-left: 1px solid #395199;
+}
+.nav-tabs .nav-link {
+  border-right: 1px solid #395199;
+  border-top: 1px solid #395199;
+  color: #fff;
+}
+.nav-tabs .nav-link:hover {
+  border-color: #395199;
+  border-left: 1px solid rgba(0, 0, 0, 0);
+}
+.nav-tabs .nav-link.active {
+  border-color: inherit;
+  border: none;
+  color: #344579;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+.nav-tabs .nav-link.active:hover {
+  border-bottom: 2px solid #fff;
+  border-left: transparent;
+}
+
+.nav-link {
+  padding: 0.25rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* */
+.tab-pane h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.tab-pane p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Birthday */
+.birthdayWrapper {
+  margin: 1.75rem 0;
+  border: 1px solid #e4e4e4;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  flex-direction: column;
+}
+.birthdayWrapper .birthdayCake {
+  color: #344579;
+  font-size: 1.85rem;
+}
+.birthdayWrapper .date {
+  position: relative;
+  width: 65%;
+}
+.birthdayWrapper .date input {
+  width: 100%;
+  font-size: 0.8rem;
+}
+.birthdayWrapper .date input:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+.birthdayWrapper .date span {
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  font-size: 0.75rem;
+  color: #344579;
+  font-weight: 500;
+}
+.birthdayWrapper .birthdayContainer,
+.birthdayWrapper .dob {
+  display: flex;
+  align-items: center;
+}
+.birthdayWrapper .birthdayContainer {
+  width: 100%;
+  justify-content: center;
+}
+.birthdayWrapper .birthdayContainer h5 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #344579;
+  margin-bottom: 0 !important;
+  margin-left: 1rem;
+}
+.birthdayWrapper .dob {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.accordion {
+  margin-bottom: 1rem;
+}
+
+.continueReading {
+  font-size: 0.75rem;
+  text-align: right;
+}
+.continueReading a {
+  color: #344579;
+}
+
+.card-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.card-header a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 0.65rem;
+}
+.card-header a.collapsed {
+  background-color: #fff;
+}
+.card-header a.collapsed .arrow span {
+  color: #e4e4e4;
+  border: 1px solid #e4e4e4;
+}
+.card-header a:hover,
+.card-header a .collapsed, .card-header a:not(.collapsed) {
+  text-decoration: none;
+}
+.card-header a:not(.collapsed) .fa-angle-right {
+  transform: rotate(90deg);
+}
+.card-header a:not(.collapsed) .heading {
+  color: #344579;
+}
+.card-header a i {
+  transition: ease-in-out 0.3s;
+}
+.card-header .arrow span {
+  border-radius: 50%;
+  border: 1px solid #344579;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #344579;
+}
+.card-header .heading {
+  display: flex;
+  width: 54%;
+  font-size: 0.8rem;
+  color: #212529;
+  margin-bottom: 0 !important;
+  margin-right: auto;
+}
+.card-header .gift,
+.card-header .noti {
+  width: 17%;
+  display: flex;
+  justify-content: flex-end;
+}
+.card-header .arrow {
+  width: 12%;
+}
+
+.card {
+  background-color: rgba(52, 69, 121, 0.1);
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+.card-body p {
+  font-size: 0.85rem;
+  color: #344579;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.card-body .tutorial span {
+  display: block;
+}
+.card-body .videoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.card-body .videoContainer .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.noti span,
+.gift span {
+  background-color: #344579;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.gift i {
+  font-size: 1.2rem;
+}
+
+.noti span {
+  font-size: 0.75rem;
+}
+
+/* */
+.modal-footer {
+  padding: 0.35rem 0.75rem;
+  background-color: rgba(52, 69, 121, 0.1);
+}
+.modal-footer .fa-heart {
+  color: #eb0256;
+}
+
+.modal-title {
+  color: #344579;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.gratisfaction {
+  color: #344579;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.appsmav {
+  font-size: 0.8rem;
+  color: #7b7b7b;
+  font-weight: 500;
+}
+
+.close {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.2rem;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 300;
+  padding: 0 !important;
+}
+.close:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.menu span {
+  background-color: rgba(52, 69, 121, 0.1);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  color: #344579;
+  font-weight: 600;
+}
+
+.humburger {
+  position: relative;
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  margin-left: 15px;
+}
+.humburger i {
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #979797;
+  top: 2px;
+}
+.humburger i::before, .humburger i::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #979797;
+}
+.humburger i::before {
+  top: 8px;
+}
+.humburger i::after {
+  top: 16px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 568px) {
+  .nav-link {
+    padding: 0.5rem 3rem;
+  }
+
+  .nav-tabs {
+    /* margin-top: -2.35rem; */
+    margin-top: -40px;
+  }
+
+  .hero-image::before {
+    padding-bottom: 30%;
+  }
+
+  .card-header a {
+    padding: 0.75rem 1rem;
+  }
+  .card-header .arrow,
+.card-header .gift,
+.card-header .noti {
+    width: 10%;
+    justify-content: flex-end;
+  }
+  .card-header .heading {
+    width: 70%;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .birthdayWrapper {
+    flex-direction: row;
+  }
+  .birthdayWrapper .birthdayContainer {
+    width: 31%;
+    justify-content: space-between;
+  }
+  .birthdayWrapper .birthdayContainer h5 {
+    margin-left: 0;
+  }
+  .birthdayWrapper .dob {
+    width: 65%;
+    margin-top: 0;
+  }
+  .birthdayWrapper .date {
+    width: 70%;
+  }
+}
+.datepicker {
+  z-index: 1151 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
